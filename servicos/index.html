@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Portfolio Jonathan Pollard</title>
+	<link rel="stylesheet" href="../service.css">
+	<link rel="stylesheet" href="../metroui.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="">
+
+	<section class="serviceBanner" id="secServ">
+
+		<header>
+			<a href="../" class="logo">Jfp</a>
+			<div id="toggle2" onclick="toggle()"></div>
+		</header> 
+
+     
+     <div class="grid3">
+				<div class="grid3-item">
+				<!--	<div style="background-color: red; width: 100%; height: 218%"></div> -->
+		        <img src="../img/youtube_portfolio2.png"> 
+		        <p>Veja meu canal sobre programação</p>
+		      </div>
+		      <div class="grid3-item">
+		        <img src="../img/github.png">
+		        <p>Veja meus códigos</p>
+		      </div>
+		      <div class="grid3-item">
+		        <img src="../img/lading_page.png">
+		        <p>Veja meus emails</p>
+		      </div>
+
+		      <div ng-include="'index.html'"></div>
+     </div>
+
+	</section>
+
+	
+	<div id="navigation">
+		<ul>
+			
+			<li><a href="../">Sobre</a></li>
+			<li><a href="#">Serviços</a></li>
+		</ul>
+	</div>
+
+	
+
+		<script type="text/javascript">
+			function toggle(){
+				var secServ = document.getElementById('secServ');
+				var nav = document.getElementById('navigation');
+				secServ.classList.toggle('active')
+				nav.classList.toggle('active')
+			}
+
+		</script>
+
+</body>
+</html>
+
+
+
+
+  
+	<!--	<div class="metro">
+			<div class="l1">
+				<li class="item i1">
+						<i class="ion-social-android-outline"></i>
+						<span>Android</span>
+
+				</li>
+
+				<li class="item i2">
+					<i class="ion-ios-videocam"></i>
+					<span>Videos</span>
+				</li>
+
+
+		    </div>
+
+	
+					<div class="l2">
+						<li class="item i3">
+								<i class="ion-image"></i>
+								<span>Photos</span>
+
+						</li>
+
+						<li class="item i4">
+							<i class="ion-play"></i>
+							<span>Music</span>
+						</li>
+
+						<li class="item i5">
+							<i class="ion-gear-b"></i>
+							<span>Setting</span>
+						</li>
+
+
+				</div>
+		</div> -->
